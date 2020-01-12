@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "3D game",
+"productVersion": "0.1",
+"dataUrl": "build v1.2.data.unityweb",
+"wasmCodeUrl": "build v1.2.wasm.code.unityweb",
+"wasmFrameworkUrl": "build v1.2.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Light",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.17f1"
+}
