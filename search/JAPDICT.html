@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="A Japanese | English dictionary word look tool. The tool contains only the words found in the book series - Genki an Integrated Course in Elementary Japanese -">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <title>Genki English | Japanese Dictionary</title>
+
+</head>
+<body>
+
+	<div class="container-fluid">
+    <!-- Hamburger Helper Info -->
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark text-light update-text p-4">
+          <h5>Version 2.1</h5>
+          <p>Type in either English or Japanese. By default, the entire dictionary is listed. 
+            Using the search bar limits the results. Clicking on a word takes you to the word's <u>details page</u>.</p> 
+          <p>Using the [ <em> Back</em> ] link will load your last search results.
+          To clear your search results, simply clear the search field and do a blank search or click the banner.</p>
+          <p><em>Romaji to Kana conversions and Searching Romaji are in development.</em></p>
+        </div>
+      </div>
+
+      <!-- App -->
+      <div class="banner">
+        <div class="row">
+          <div class="col">
+            <!-- Logo, Banner, Info ? -->
+            <img src="LearnGenki-wordsearch-banner.png" class="img-fluid img-banner-padding" onclick="clearResults()" />
+          </div>
+          <div class="col-2">
+            <img src="info.png" class="float-right img-fluid img-banner-padding hamburger-menu" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+              aria-label="Toggle navigation" />
+          </div>
+          
+        </div>  <!--//END ROW -->
+        <!-- Search field and column names -->
+        <div class="row">
+          <div class="col-12">
+            <input type="text" name="search" id="search" class="form-control" placeholder="search..." />
+          </div>
+        </div>
+        <div class="row columnTitles">
+          <div class="col">kanji</div>
+          <div class="col">kana</div>
+          <div class="col">english</div>
+        </div>
+      </div>
+    </div>
+
+		<!-- Results -->
+    <div class="resultsList"></div>
+
+  </div>
+  <!-- Bootstrap -->
+  <script src="bootstrap/js/jquery-3.2.1.slim.min.js"></script>
+  <script src="bootstrap/js/popper.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <!-- search and japanese -->
+	<script src="js/wanakana.min.js"></script>
+  <script src="js/genki_dictionary.js"></script>
+  <script src="js/search.js"></script>
+	<script type="text/javascript">
+		//load all words
+    (resultsItr)();
+	</script>
+</body>
+</html>

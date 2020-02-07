@@ -119,12 +119,13 @@ nav li {
 nav a {
 	background-color: #DD934A;
 	display: inline-block;
-	font-size: 3rem;
+	font-size: 2rem;
 	margin-left:10px;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: black;
 	transition-duration: 200ms;
+	padding: 0 10px;
 }
 
 nav form {
