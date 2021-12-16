@@ -94,8 +94,8 @@ function create_menu() {
 
   for (var i = 0; i < menu.length; i++) {
     var menu_item = document.createElement("a");
-    // menu_item.href = "/" + menu[i] + ".html";
-    menu_item.href = menu[i] + ".html";
+    menu_item.href = "/" + menu[i] + ".html";
+    // menu_item.href = menu[i] + ".html";
     menu_item.id = menu[i].localeCompare(page_name) == 0 ? "nav_button_active" : "nav_button";
     menu_item.innerHTML = menu[i].toUpperCase();
     nav.appendChild(menu_item);
