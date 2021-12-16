@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124594675-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-124594675-1');
+	</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Hanlai Chen">
+	<link rel="icon" type="image/png" href="../Assets/GLogoBack.png" size="32x32"/>
+	<link href="../style.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="../aos.css"/>
+	<title>CrazyStack</title>
+</head>
+<body>
+	<button onclick="scrollToTop()" id="top_button" title="Scroll to top"><i class="up_arrow"></i></button>
+	<div class="navigation">
+		
+	</div>
+	<h1>Android GameCenter</h1>
+	<p>Project Timeline - Jan 2019 to Present
+	<br>Roles - Game Designer
+	<br>Tech Stacks - C#, Blender, Unity, Adobe Photoshop
+	<br>Links - <a href="https://github.com/michael2221807/CrazyStack">CrazyStack</a>
+	<hr id="music_hr"/>
+	<h1>Planning</h1>
+	<p class="project-body">
+		CrazyStack should be easy-to-play, and free-to-play; it should feature very minimalistic user interfaces. The game should have zero learning cost and can be played without any tutorial and instructions. Design with very primary color scheme, easy machanics, and featuring infinite looped mmachanics. It should also be playable for an infinite amount of time. Allowing players to play while multitasking, and losing would not bring frustration.
+	</p>
+	<p>
+	The game is completely built by my own, and now the beta version can be played on web browser for both PC and mobile devices. Performance on mobile devices can further be improved, and I have released a mobile version for low-end devices. Click <a href="https://michael2221807.github.io/CrazyStack.html">here</a> and start playing!
+	</p>
+	<h1>Design and Development</h1>
+	<p>
+		<br>Player tap space or tap on screen to jump, and player control the red block to avoid colliding with the obstacle. The scoreboard records the maximum distance from the player to travel in one consecutive run. Game states are saved automatically and player can always resume to the level they are at. For infinite levels generation, platforms are created, and they are generated in random sequence for each level, also each level has its own platforms pool to choose from. Platforms would also be despawned after player passing them to save memory and improve performance. The beta version is available for WebGL, Android and iOS versions would need more polishing and testing before the launch. 
+		<br> <img src="crazystack/crazystack.gif" class="project-image-margin">
+		<br>The Landscape Generator used in the game is a self-developed generator that uses the procedural generation algorithm. All attributes are tunable and can be highly customized, users can easily put in different prefabs and generate their unique landscape with seed. The generator uses raycasting to locate each spawn point and sequentially places each item. This would allow objects to be overlaps with each other which create a more dynamic scene.
+		<br> <img src="crazystack/lanscapegenerator.gif" class="project-image-margin">
+		<br>As a side project of mine, not only did I learn a lot about Unity, it also gave me a deep understanding of game design and development. As a beginner of game design with Unity, I am really surprised that this will bring me so many challenges, and at the same time, I am also surprised that this will bring me so many surprises. Please look forward to the official version which would launch on Google Store and App Store! Click --> <a href="https://michael2221807.github.io/CrazyStack.html">Beta Version</a>
+		
+	</p>
+	<div class="flexbox" id="end">
+		<div id="star">.</div>
+		<div id="star">.</div>
+		<div id="star">.</div>
+		<div id="star">.</div>
+	</div>
+</body>
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script src="../script.js"></script>
+</html>

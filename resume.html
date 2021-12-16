@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124594675-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-124594675-1');
+	</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Hanlai Chen">
+	<link rel="icon" type="image/png" href="Assets/GLogoBack.png" size="32x32"/>
+	<link href="style.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="aos.css"/>
+	<title>Resume</title>
+</head>
+<body>
+	<button onclick="scrollToTop()" id="top_button" title="Scroll to top"><i class="up_arrow"></i></button>
+	<div class="navigation">
+		<!-- <a href="/resume.html" id="nav_button_active">RESUME</a> <span style="opacity:0.5">| </span>
+		<a href="/projects.html" id="nav_button">PROJECTS</a> <span style="opacity:0.5">| </span>
+		<a href="/music.html" id="nav_button">MUSIC</a> <span style="opacity:0.5">| </span>
+		<a href="/about.html" id="nav_button">ABOUT</a>
+		<hr/> -->
+	</div>
+	
+	<section id="resume">
+		<div class="resume_head">ABOUT ME</div>
+		<hr id="resume_hr"/>
+		<div id="add-margin">
+			<h4 class="text_left">Name: Hanlai Chen (Michael)</h4>
+			<h4 class="text_left">Living In: Toronto, ON</h4>
+			<h4 class="text_left">Languages: English, Cantonese, Chinese</h4>
+			<h4 class="text_left">Email: michael2221807@gmail.com</h4>
+		</div>
+	</section>
+	<hr id="music_hr"/>
+	<section id="resume">
+		<div class="resume_head">EXPERIENCE</div>
+		<hr id="resume_hr"/>
+		<ul class="work">
+			<div class="flexbox">
+					<div>Game Design and Development <a href="projects/CrazyStack.html">CrazyStack</a></div>
+					<div>Jan 2019 - Present</div>
+			</div>
+			<li>The game was built with Unity and C#.</li>
+			<li>Serializerd and save game data using binary encapsulation.</li>
+			<li>Created multiple scenes with procedural generation algorithm.</li>
+			<li>Created distinctive and appealing UI/UX by devising Minimalism and fresh art along with novel and innovated gameplay.</li>
+			<li>Github Repo: <span id="resume-highlight"><a href="https://github.com/michael2221807/CrazyStack">here</a></span>.
+		</ul>
+		<ul class="work">
+			<div class="flexbox">
+					<div>Website Development <a href="Projects/knowark/index.html">Knowark.ca</a> (A central repository of resources and events available to people with disabilities).</div>
+					<div>Jan 2021 - Jun 2021</div>
+			</div>
+			<li>The website was developed with React, NodeJS, DynamoDB, and multiple AWS infrastructures.</li>
+			<li>Collaborated with our partner and develop a platform that provide supports for the disability community.</li>
+			<li>The website was deployed by AWS Beanstalk and hosted by AWS ec2 server instance with Route 53 DNS and Elastic load balancer.</li>
+			<li>Created customize CICD pipeline on GitHub for auto deployment to AWS Beanstalk.</li>
+			<li>Implemented database level password encryption, and setup HTTPS for the website.</li>
+			<li>Set up AWS site monitoring, and auto-scaling.</li>
+			<li>Implemented on-site searching with AWS Elasticsearch API.</li>
+			<li>Link: <span id="resume-highlight"><a href="https://www.knowark.ca/">here</a></span>.
+		</ul>
+		<ul class="work">
+			<div class="flexbox">
+					<div>Computer Vision and AI <a href="Assets/Social_distance_detector.pdf">Real-time Social Distance Detector</a></div>
+					<div>Sep 2020 - Jan 2021</div>
+			</div>
+			<li>Developed on Python and utilized Darknet to train Yolo tiny V4 pedestrians detector with 32 convolution layers.</li>
+			<li>Create program to classify and filter training data, i.e. select training image with crowded scene.</li>
+			<li>The model Achieved a mAP of 65% while maintaining high framerate to support our real-time application.</li>
+			<li>Using Homography and other perspective transform technique to create bird-eye-view scene and calculate distance between pedestrian.</li>
+			<li>Github Repo: <span id="resume-highlight"><a href="https://github.com/michael2221807/social-distance-detector">here</a></span>.
+		</ul>
+		<!-- <ul class="work" id="see-more" onclick="show_full_history()">
+			SHOW FULL EXPERIENCE
+		</ul> -->
+		<!-- <div class="see-more-history"> -->
+		<ul class="work">
+			<div class="flexbox">
+					<div>Website Development <a href="projects/PokemonTrainer.html">Pokémon Trainer</a></div>
+					<div>Jan 2020 - Jun 2020</div>
+			</div>
+			<li>The website was developed with React, NodeJS, JSON, and MongoDB, and deployed by Heroku.</li>
+			<li>Developed APIs for database access, user management and admin control panel.</li>
+			<li>Proposed pre-project analysis and technical assessments and developed website with user-friendly interface and a variety of functionalities with Pokémon theme.</li>
+			<li>Github Repo: <span id="resume-highlight"><a href="https://github.com/michael2221807/React-Pokemon-Trainer-App">here</a></span>.
+		</ul>
+		<ul class="work">
+			<div class="flexbox">
+					<div>Android App Development <a href="projects/gamecenter.html">GameCentre</a></div>
+					<div>Sep 2018 - Jan 2019</div>
+			</div>
+			<li>The Application and games are developed using Android Studio, Xml, Java.</li>
+			<li>The Application development strictly follows SOLID principle and implement with goals of code abstraction, stability, and reuse.</li>
+			<li>Implement functions and interfaces with a variety of Design Patterns including Singleton and Serialization, Generic etc.</li>
+			<li>Build unit tests for inspections and diagnostic procedures to identify bugs and optimizing application's performance.</li>
+			<li>Github Repo: <span id="resume-highlight"><a href="https://github.com/michael2221807/csc207">here</a></span>.
+		</ul>
+		
+	<!-- </div> -->
+	</section>
+	<section id="resume">
+		<div class="resume_head">TECHNICAL SKILLS &nbsp<span style="font-size: 13px"> (Hover on each skills to see proficiency) </span></div>
+		<hr id="resume_hr"/>
+		<div class="flexbox">
+		<span style="color:#4dd0e1">Programming</span> <span style="color:#F4E025">Database</span> <span style="color:#db8952">CV, AI, and Graphics</span> <span style="color:#c0db52">Software Development</span> <span style="color:#E26A9B">Miscellaneous</span>
+		</div>
+		<div class="skills_heading">
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						Python
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_blue_10.png" width="200px">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						C
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_blue_7.png" width="200px">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						Java
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_blue_8.png" width="200px">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						C#/C++
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_blue_9.png" width="200px">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front">
+						JavaScript
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_blue_9.png" width="200px">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="skills_heading">
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						SQL
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_yellow_7.png" width="200px">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						NoSQL
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_yellow_9.png" width="200px">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="skills_heading">
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						OpenCV
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_orange_10.png" width="200px">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						Pytorch
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_orange_8.png" width="200px">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						Tensorflow
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_orange_8.png" width="200px">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						OpenGL
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_orange_7.png" width="200px">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="skills_heading">
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						Git
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_green_10.png" width="200px">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						UML
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_green_8.png" width="200px">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						Testing
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_green_8.png" width="200px">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						Agile
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_green_10.png" width="200px">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="skills_heading" id="addbottommargin">
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						Unity
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_magenta_10.png" width="200px">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						Android Studio
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_magenta_7.png" width="200px">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						AWS
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_magenta_7.png" width="200px">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						Bash/Shell
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_magenta_9.png" width="200px">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front" >
+						React/Vue
+					</div>
+					<div class="back">
+						<img src="Assets/gauge_magenta_9.png" width="200px">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="resume">
+		<div class="resume_head">EDUCATION</div>
+		<hr id="resume_hr"/>
+			<ul class="work">
+			<div class="flexbox">
+					<div><a href="https://www.utoronto.ca/">University of Toronto, St. George Campus</a></div>
+					<div>Sep 2017 - Dec 2021</div>
+			</div>
+			<div class="flexbox">
+					<h4 class="text_left" style="margin-bottom: 1%">Bachelor of Science in Computer Science (Specialist in Artificial Intelligence)</h4><br>
+			</div>
+			</ul>
+
+			<ul class="work" >
+			<div class="flexbox">
+					<div><a href="https://bodwell.edu/"/>Bodwell High School, Vancouver</a></div>
+					<div>Sep 2014 - Sep 2017</div>
+			</div>
+			<div class="flexbox">
+					<h4 class="text_left" style="margin-bottom: 2%">High School Diploma with a final grade of 95%.</h4><br>
+			</div>
+			</ul>
+	</section>
+<section id="resume">
+	<div class= "resume_head">VOLUNTARY EXPERIENCE</div>
+	<hr id="resume_hr"/>
+		<ul class="work">
+			<div class="flexbox">
+				<div>Peru Service Trip to <a href="https://bodwell.edu/service-trip-to-peru-lima-2016/">Lima & Cuzco</a></div>
+				<div>May 2016</div>
+			</div>
+			<li>Involved in teaching and building new classrooms for a local school, and raised fund for the project in community back in Vancouver.  </li>
+		</ul>
+		
+		
+		
+<script src="aos.js"></script>
+    <!-- <script>
+		var resume_modal = document.getElementById('resume-modal');
+		var link = document.getElementById('resumelink');
+
+		link.onclick = function(){
+			resume_modal.style.display = "block";
+		}
+
+		window.onclick = function(event) {
+		  	if (event.target == resume_modal) {
+		    	resume_modal.style.display = "none";
+		  	}
+		}
+
+		var close = document.getElementsByClassName("close")[0];
+
+		close.onclick = function(){
+			resume_modal.style.display = "none";
+		}
+	</script> -->
+</body>
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script>
+	$(function() {
+    	var history = document.getElementsByClassName("see-more-history")[0];
+    	history.style.display = "none";
+	});
+
+	function show_full_history() {
+		var see_more_button = document.getElementById("see-more");
+		see_more_button.style.display = "none";
+		var history = document.getElementsByClassName("see-more-history")[0];
+    	history.style.display = "block";
+	}
+
+</script>
+<script src="script.js"></script>
+</html>
